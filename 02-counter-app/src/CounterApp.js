@@ -5,7 +5,7 @@ const CounterApp = ({ value = 0 }) => {
   const [counter, setCounter] = useState(value);
   const add = () => setCounter(counter + 1);
   const subtract = () => setCounter(counter - 1);
-  const reset = () => setCounter(0);
+  const reset = () => setCounter(value);
   return (
     <>
       <h1>CounterApp</h1>
