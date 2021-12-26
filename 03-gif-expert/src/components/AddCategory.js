@@ -8,7 +8,7 @@ export const AddCategory = ({ setCategories }) => {
   const handleSubmit = (event) => {
     event.preventDefault(); // Evita recarga de la pagina cuando envia el formulario
     if (inputValue.trim().length > 2) {
-      setCategories((categories) => [...categories, inputValue]);
+      setCategories((categories) => [inputValue, ...categories]);
       setInputValue(defaultValue);
     }
   };

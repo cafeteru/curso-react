@@ -20,3 +20,18 @@ input {
   margin-right: 10px;
   overflow: hidden;
 }
+
+.card p {
+  padding: 5px;
+  text-align: center;
+}
+
+.card img {
+  max-height: 170px;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
