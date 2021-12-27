@@ -1,6 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
+exports[`AddCategory Debe de cambiar la caja de texto 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</form>
+`;
+
+exports[`AddCategory Debe de llamar al setCategories y limpiar la caja de texto 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</form>
+`;
+
+exports[`AddCategory No debe de postear la información con submit 1`] = `
 <form
   onSubmit={[Function]}
 >
