@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid Debe de mostrar crearse 1`] = `
+<Fragment>
+  <h3>
+    Bleach
+  </h3>
+  <p>
+    "Cargando..."
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
