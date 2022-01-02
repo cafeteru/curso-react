@@ -38,9 +38,11 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
-    "prettier": "2.5.1"
+    "prettier": "2.5.1",
+    "react-test-renderer": "^17.0.2"
   }
 }

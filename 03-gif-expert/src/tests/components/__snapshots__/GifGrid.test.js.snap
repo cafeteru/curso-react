@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GifGrid Debe de mostrar crearse 1`] = `
+exports[`GifGrid Debe de crearse 1`] = `
 <Fragment>
   <h3>
     Bleach
@@ -11,5 +11,23 @@ exports[`GifGrid Debe de mostrar crearse 1`] = `
   <div
     className="card-grid"
   />
+</Fragment>
+`;
+
+exports[`GifGrid Debe de mostrar items cuando se cargan imagenes useFetchGifs 1`] = `
+<Fragment>
+  <h3>
+    Bleach
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="id"
+      key="id"
+      title="title"
+      url="http://localhost"
+    />
+  </div>
 </Fragment>
 `;

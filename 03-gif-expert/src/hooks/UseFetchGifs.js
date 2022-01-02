@@ -6,9 +6,11 @@ export const useFetchGifs = (category) => {
     gifs: [],
     loading: true,
   });
+
   // useEffect -> para controlar las llamadas
   useEffect(() => {
     getGifs(category).then((res) => setState({ gifs: res, loading: false }));
   }, [category]);
+
   return state;
 };

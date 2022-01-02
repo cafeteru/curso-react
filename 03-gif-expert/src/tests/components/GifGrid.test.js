@@ -6,7 +6,8 @@ jest.mock("../../hooks/UseFetchGifs"); // crea el mock
 
 describe("GifGrid", () => {
   const category = "Bleach";
-  test("Debe de mostrar crearse", () => {
+
+  test("Debe de crearse", () => {
     useFetchGifs.mockReturnValue({
       gifs: [],
       loading: true,
@@ -19,16 +20,18 @@ describe("GifGrid", () => {
   test("Debe de mostrar items cuando se cargan imagenes useFetchGifs", () => {
     const gifs = [
       {
-        id: "abs",
+        id: "id",
         url: "http://localhost",
         title: "title",
       },
     ];
     useFetchGifs.mockReturnValue({
       gifs,
-      loading: true,
+      loading: false,
     });
     const wrapper = shallow(<GifGrid category={category} />);
+    expect(wrapper).toMatchSnapshot();
     expect(wrapper.find("p").exists()).toBeFalsy();
+    expect(wrapper.find("GifGridItem").length).toBe(gifs.length);
   });
 });
