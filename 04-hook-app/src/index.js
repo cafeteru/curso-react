@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CounterWithCustomHook } from "./components/01-useState/CounterWithCustomHook";
+import { MultipleCustomHooks } from "./components/03-examples/MultipleCustomHooks";
 
-ReactDOM.render(<CounterWithCustomHook />, document.getElementById("root"));
+ReactDOM.render(<MultipleCustomHooks />, document.getElementById("root"));
